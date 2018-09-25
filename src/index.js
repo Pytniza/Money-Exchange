@@ -1,7 +1,6 @@
 // PLEASE DON'T change function name
 module.exports = function makeExchange(currency) {
     var obj = {};
-    
         if (currency <= 0) return obj;
         if (currency >= 10000) return {error: "You are rich, my friend! We don't have so much coins for exchange"};
         var h = Math.floor(currency / 50);
